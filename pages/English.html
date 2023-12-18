@@ -471,7 +471,7 @@ body{
        header .song-side .popular-song{
         width: 90%;
         height: auto;
-        border: 1px solid #fff;
+       /* border: 1px solid #fff;*/
         margin: auto;
         margin-top: 15px;
        }
@@ -493,7 +493,12 @@ body{
         height: 150px;
         margin-top: 15px;
         display:flex;
+        overflow: auto;
+        scroll-behavior: smooth;
        }
+       header .song-side .popular-song .pop-song::-webkit-scrollbar{
+        display: none;
+    }
        header .song-side .popular-song .pop-song li{
         min-width:100px;
         height: 140px;
@@ -504,9 +509,90 @@ body{
        header .song-side .popular-song .pop-song li:hover{
         background: rgb(105,105,107,.1);
        }
+       header .song-side .popular-song .pop-song li .img-play{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+        header .song-side .popular-song .pop-song li .img-play img{
+        width: 100%;
+        height: 100%;
+       }
+       header .song-side .popular-song .pop-song li .img-play .bi{
+        position: absolute;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .3s linear;
+        opacity: 0;
+       }
+       header .song-side .popular-song .pop-song li .img-play:hover .bi{
+        opacity: 1;
+       }
+       header .song-side .popular-song .pop-song li h5{
+       padding: 5px 0px 0px 5px;
+       line-height: 15px;
+       font-size: 10px;
+       }
+       header .song-side .popular-song .pop-song li h5 .subtitle{
+        font-size: 9px;
+        color: #4c5262;
+       }
+       header .song-side .popular-artists{
+        width: 90%;
+        height: auto;
+       /* border: 1px solid #fff;*/
+        margin: auto;
+        margin-top: 15px;
+       }
+       header .song-side .popular-artists .h4{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       }
+       header .song-side .popular-artists .h4 .bi{
+        color: #a4a8b4;
+        cursor: pointer;
+        transition: .3s linear;
+       }
+       header .song-side .popular-artists .h4 .bi:hover{
+        color: #fff;
+       }
+       header .song-side .popular-artists .item{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+       }
+       header .song-side .popular-artists .item::-webkit-scrollbar{
+        display:none;
+       }
+       header .song-side .popular-artists .item li{
+        list-style-type: none;
+        position: relative;
+        min-width: 60px;
+        height: 60px;
+        /*background-color: #fff;*/
+        border-radius: 50%;
+        margin-right: 20px;
+        cursor: pointer;
+       }
+       header .song-side .popular-artists .item li img{
+       width: 100%;
+       height: 100%;
+       border-radius: 50%;
+       position: absolute;
+       }
     </style>
 </head>
 <body>
+    <script>
+        
+    </script>
     <header>
         <div class="menu-side">
             <h1>Playlist</h1>
@@ -617,10 +703,145 @@ body{
         <div class="pop-song">
            <li class="songItem">
                 <div class="img-play">
-
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+                    <i class="bi playList bi-play-circle-fill"id="6"></i>
                 </div>
+                <h5>Love Yourself
+                <br>
+                <div class="subtitle">Justin Bieber</div>
+                </h5>
            </li>
+           <li class="songItem">
+            <div class="img-play">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+                <i class="bi playList bi-play-circle-fill"id="6"></i>
+            </div>
+            <h5>Love Yourself
+            <br>
+            <div class="subtitle">Justin Bieber</div>
+            </h5>
+       </li>
+       <li class="songItem">
+        <div class="img-play">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+            <i class="bi playList bi-play-circle-fill"id="6"></i>
         </div>
+        <h5>Love Yourself
+        <br>
+        <div class="subtitle">Justin Bieber</div>
+        </h5>
+   </li>
+   <li class="songItem">
+    <div class="img-play">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+        <i class="bi playList bi-play-circle-fill"id="6"></i>
+    </div>
+    <h5>Love Yourself
+    <br>
+    <div class="subtitle">Justin Bieber</div>
+    </h5>
+</li>
+<li class="songItem">
+    <div class="img-play">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+        <i class="bi playList bi-play-circle-fill"id="6"></i>
+    </div>
+    <h5>Love Yourself
+    <br>
+    <div class="subtitle">Justin Bieber</div>
+    </h5>
+</li>
+<li class="songItem">
+    <div class="img-play">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+        <i class="bi playList bi-play-circle-fill"id="6"></i>
+    </div>
+    <h5>Love Yourself
+    <br>
+    <div class="subtitle">Justin Bieber</div>
+    </h5>
+</li>
+<li class="songItem">
+    <div class="img-play">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+        <i class="bi playList bi-play-circle-fill"id="6"></i>
+    </div>
+    <h5>Love Yourself
+    <br>
+    <div class="subtitle">Justin Bieber</div>
+    </h5>
+</li>
+<li class="songItem">
+    <div class="img-play">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+        <i class="bi playList bi-play-circle-fill"id="6"></i>
+    </div>
+    <h5>Love Yourself
+    <br>
+    <div class="subtitle">Justin Bieber</div>
+    </h5>
+</li>
+<li class="songItem">
+    <div class="img-play">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.7WVA8pQDB0oWEZtly0FrqwHaHa&pid=Api&P=0&h=180" alt="justin">
+        <i class="bi playList bi-play-circle-fill"id="6"></i>
+    </div>
+    <h5>Love Yourself
+    <br>
+    <div class="subtitle">Justin Bieber</div>
+    </h5>
+</li>
+        </div>
+    </div>
+    <div class="popular-artists">
+        <div class="h4">
+        <h4>Popular Artists</h4>
+        <div class="btn-s">
+        <i id="left-scrolls" class="bi bi-arrow-left-short"></i>
+        <i id="right-scrolls"class="bi bi-arrow-right-short"></i>
+          </div>
+       </div>
+       <div class="item">
+         <li>
+            <img src="https://media1.popsugar-assets.com/files/thumbor/YFyePiotTn70mSnCihj4BKEnp9s/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/06/27/690/n/1922153/3c123380cad0aaaa_GettyImages-71027193.jpg" alt="Taylor Swift" title="Taylor Swift">
+         </li>
+         <li>
+            <img src="http://images6.fanpop.com/image/photos/37100000/justin-bieber-2014-justin-bieber-37130337-1877-2500.jpg" alt="Taylor Swift" title="Justin Bieber">
+         </li>
+         <li>
+            <img src="http://images4.fanpop.com/image/photos/16900000/Jennifer-Lopez-jennifer-lopez-16967085-1280-1924.jpg" alt="Taylor Swift" title="Jennifer Lopez">
+         </li>
+         <li>
+            <img src="https://static.billboard.com/files/2020/10/selena-gomez-jan-11-2020-billboard-1548-1603893459-compressed.jpg" alt="Taylor Swift" title="Selena Gomez">
+         </li>
+         <li>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Ch55xIU-YSEw5vmR7HUynQHaIh&pid=Api&P=0&h=180" alt="Taylor Swift" title="Lady Gaga">
+         </li>
+         <li>
+            <img src="https://assets.teenvogue.com/photos/580e9001b3628bff6fcfdedb/master/w_1600/katy-perry-beauty-evo-5.jpg" alt="Taylor Swift" title="Katty Perry">
+         </li>
+         <li>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.mhGOMd3Fg5WndT_KWR-voAHaEK&pid=Api&P=0&h=180" alt="Taylor Swift" title="Shakira">
+         </li>
+         <li>
+            <img src="https://static.billboard.com/files/media/billie-eilish-style-beat-bb7-2019-billboard-1548-compressed.jpg" alt="Taylor Swift" title="Billie Eilish">
+         </li>
+         <li>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.4tZNdz8cOVEYXO7OiuQUQQHaEK&pid=Api&P=0&h=180" alt="Taylor Swift" title="Dua Lipa">
+         </li>
+         <li>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.cl7XCuQgHqAQ8wL7mTn2KgHaLJ&pid=Api&P=0&h=180" alt="Taylor Swift" title="Harry Style">
+         </li>
+         <li>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Ji_2S-KTLCHAt5ontzKc3gHaFQ&pid=Api&P=0&h=180" alt="Taylor Swift" title="Mega The Stallion">
+         </li>
+         <li>
+            <img src="https://www.stylist.co.uk/images/app/uploads/2020/01/27113053/ariana-grande-2020-grammys-crop-1589450021-1593x1062.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress" alt="Taylor Swift" title="Ariana Grande">
+         </li>
+         <li>
+            <img src="http://hdqwalls.com/wallpapers/zayn-malik-monochrome-2018-wv.jpg" alt="Taylor Swift" title="Zyan Malikh">
+         </li>
+       </div>
     </div>
  </div>
         <div class="master-play">
