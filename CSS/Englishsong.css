@@ -359,7 +359,7 @@
        }
        header .song-side nav ul li:hover{
          color: #fff;
-       }
+    }
        header .song-side nav ul li:nth-child(1){
          color: #fff;
        }
@@ -401,12 +401,12 @@
        font-size: 17px;
        }
        header .song-side nav .user{
-       position: relative;
-       width:30px;
-       height: 30px;
-       border-radius: 50%;
-       cursor: pointer;
-       }
+        position: relative;
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        }
        header .song-side nav .user img{
        position: absolute;
        width: 60px;
