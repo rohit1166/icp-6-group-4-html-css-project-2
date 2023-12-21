@@ -10,7 +10,6 @@
         box-sizing: border-box;
         margin: 0%;
         padding: 0%;
-
     }
     header{
         width: 85%;
@@ -416,10 +415,10 @@
        }
        header .song-side .content{
         width:90%;
-        height: 30%;
+        height: 25%;
         margin: auto;
-       /* border:1px solid #fff;*/
-        padding-top: 20px;
+      /* border:1px solid #fff;*/
+        padding-top: 10px;
        }
        header .song-side .content h1{
         font-size: 25px;
@@ -463,8 +462,8 @@
        header .song-side .popular-song{
         width: 90%;
         height: auto;
-       /* border: 1px solid #fff;*/
-        margin: auto;
+       /*border: 1px solid #fff;*/
+       margin: auto;
        }
        header .song-side .popular-song .h4{
         display: flex;
