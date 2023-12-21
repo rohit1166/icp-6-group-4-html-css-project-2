@@ -102,7 +102,7 @@
     header .menu-side .menu-song li{
         position: relative;
         list-style-type: none;
-        padding:5px 0px 5px 20px;
+        padding:2px 0px 2px 14px;
         display: flex;
         align-items: center;
         margin-bottom: 10px;
@@ -118,8 +118,8 @@
         color:#4c5267;
     }
     header .menu-side .menu-song li img{
-        width:30px;
-        height: 30px;
+        width:25px;
+        height: 25px;
         margin-left: 25px;
        }
        header .menu-side .menu-song li h5{
@@ -465,7 +465,6 @@
         height: auto;
        /* border: 1px solid #fff;*/
         margin: auto;
-        margin-top: 15px;
        }
        header .song-side .popular-song .h4{
         display: flex;
@@ -482,8 +481,7 @@
        }
        header .song-side .popular-song .pop-song{
         width:100%;
-        height: 150px;
-        margin-top: 15px;
+        height: 142px;
         display:flex;
         overflow: auto;
         scroll-behavior: smooth;
@@ -493,7 +491,7 @@
     }
        header .song-side .popular-song .pop-song li{
         min-width:100px;
-        height: 140px;
+        height: 160px;
         list-style-type: none;
         margin-right: 10px;
         transition: .3s linear;
@@ -510,8 +508,8 @@
         justify-content: center;
        }
         header .song-side .popular-song .pop-song li .img-play img{
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
        }
        header .song-side .popular-song .pop-song li .img-play .bi{
         position: absolute;
@@ -524,20 +522,21 @@
         opacity: 1;
        }
        header .song-side .popular-song .pop-song li h5{
-       padding: 5px 0px 0px 5px;
-       line-height: 15px;
+       padding: 1px 0px 0px 1px;
+       line-height: 12px;
        font-size: 10px;
        }
        header .song-side .popular-song .pop-song li h5 .subtitle{
         font-size: 9px;
         color: #4c5262;
+        
        }
        header .song-side .popular-artists{
         width: 90%;
         height: auto;
        /* border: 1px solid #fff;*/
         margin: auto;
-        margin-top: 15px;
+        margin-top: 1px;
        }
        header .song-side .popular-artists .h4{
         display: flex;
@@ -555,7 +554,7 @@
        header .song-side .popular-artists .item{
         width: 100%;
         height: auto;
-        margin-top: 10px;
+        margin-bottom: 15px;
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
@@ -574,8 +573,8 @@
         cursor: pointer;
        }
        header .song-side .popular-artists .item li img{
-       width: 100%;
-       height: 100%;
+       width: 80%;
+       height: 80%;
        border-radius: 50%;
        position: absolute;
        }
