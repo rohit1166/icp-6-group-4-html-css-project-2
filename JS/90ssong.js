@@ -5,65 +5,65 @@ const music = new Audio('vande.mp3');
 const songs = [
     {
         id:'1',
-        songName:` On My Way <br>
+        songName:` kuch kuch Hota Hai <br>
         <div class="subtitle">Alan Walker</div>`,
-        poster: "img/1.jpg"
+        poster: "Images/kuchkuchhotahai.jpeg"
     },
     {
         id:'2',
-        songName:` Alan Walker-Fade <br>
+        songName:` ladki Badi Anjani Hai <br>
         <div class="subtitle">Alan Walker</div>`,
-        poster: "img/2.jpg"
+        poster: "Images/ladkibadianjani.jpg"
     },
     // all object type 
     {
         id:"3",
-        songName: `Cartoon - On & On <br><div class="subtitle"> Daniel Levi</div>`,
-        poster: "img/3.jpg",
+        songName: `Main Koi Aisa Geet Gaoon <br><div class="subtitle"> Daniel Levi</div>`,
+        poster: "Images/maikoiaisageetgaoon.jpeg",
     },
     {
         id:"4",
-        songName: `Warriyo - Mortals <br><div class="subtitle">Mortals</div>`,
-        poster: "img/4.jpg",
+        songName: `  Chandi Ki Dal Par <br><div class="subtitle">Alka Yagnik</div>`,
+        poster: "Images/chandikidaal.jpeg",
     },
     {
         id:"5",
-        songName: `Ertugrul Gazi <br><div class="subtitle">Ertugrul</div>`,
-        poster: "img/5.jpg",
+        songName: `  Koi ladki hai  <br><div class="subtitle">Lata Mangeshkar</div>`,
+        poster: "Images/koiladkihai.jpeg",
     },
     {
         id:"6",
-        songName: `Electronic Music <br><div class="subtitle">Electro</div>`,
-        poster: "img/6.jpg",
+        songName: ` Main Koi Aisa geeta Gaoon <br><div class="subtitle">Electro</div>`,
+        poster: "Images/maikoiaisageetgaoon.jpeg",
     },
     {
         id:"7",
-        songName: `Agar Tum Sath Ho <br><div class="subtitle">Tamashaa</div>`,
+        songName: `Bajigar o Bajigar <br><div class="subtitle">Alka Yagnik</div>`,
         poster: "img/7.jpg",
     },
     {
         id:"8",
-        songName: `Suna Hai <br><div class="subtitle">Neha Kakker</div>`,
+        songName: `Koi Mil Gaya <br><div class="subtitle">Jatin Lalit</div>`,
         poster: "img/8.jpg",
     },
     {
         id:"9",
-        songName: `Dilber <br><div class="subtitle">Satyameva Jayate</div>`,
+        songName: `Yeh Ladka Hai Allah <br><div class="subtitle">Alka Yagnik</div>`,
         poster: "img/9.jpg",
     },
     {
         id:"10",
-        songName: `Duniya <br><div class="subtitle">Luka Chuppi</div>`,
+        songName: `Didi Tera Deewana <br><div class="subtitle">Lata Mangeshkar</div>`,
         poster: "img/10.jpg",
     },
     {
         id:"11",
-        songName: `Lagdi Lahore Di <br><div class="subtitle">Street Dancer 3D</div>`,
+        songName: `Bajigar O Bajigar <br><div class="subtitle">Alka Yagnik</div>`,
         poster: "img/11.jpg",
     },
     {
         id:"12",
-        songName: `Putt Jatt Da <br><div class="subtitle">Putt Jatt Da</div>`,
+        songName: `Koi Mil Gaya <br><div class="subtitle">Putt Jatt Da</div>`,
         poster: "img/12.jpg",
     },
     {
@@ -84,7 +84,7 @@ const songs = [
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
-    element.getElementsByTagName('img')[0].src = songs[i].poster;
+    element.getElementsByTagName('Images')[0].src = songs[i].poster;
     element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 })
 
@@ -129,7 +129,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         e.target.classList.remove('bi-play-circle-fill');
         e.target.classList.add('bi-pause-circle-fill');
         music.src = `audio/${index}.mp3`;
-        poster_master_play.src =`img/${index}.jpg`;
+        poster_master_play.src =`Image/${index}.jpg`;
         music.play();
         let song_title = songs.filter((ele)=>{
             return ele.id == index;
@@ -234,7 +234,7 @@ back.addEventListener('click', ()=>{
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
     music.src = `audio/${index}.mp3`;
-    poster_master_play.src =`img/${index}.jpg`;
+    poster_master_play.src =`Image/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
@@ -259,7 +259,7 @@ next.addEventListener('click', ()=>{
         index = 1;
         }
     music.src = `audio/${index}.mp3`;
-    poster_master_play.src =`img/${index}.jpg`;
+    poster_master_play.src =`Image/${index}.jpg`;
     music.play();
     let song_title = songs.filter((ele)=>{
         return ele.id == index;
