@@ -7,13 +7,13 @@ const songs = [
         id:'1',
         songName:` kuch kuch Hota Hai <br>
         <div class="subtitle">Alan Walker</div>`,
-        poster: "../Images/kuchkuchhotahai.jpeg"
+        poster: "./Images/kuchkuchhotahai.jpeg"
     },
     {
         id:'2',
         songName:` ladki Badi Anjani Hai <br>
         <div class="subtitle">Alan Walker</div>`,
-        poster: "../Images/ladkibadianjani.jpg"
+        poster: "./Images/ladkibadianjani.jpg"
     },
     // all object type 
     {
@@ -29,7 +29,7 @@ const songs = [
     {
         id:"5",
         songName: `  Koi ladki hai  <br><div class="subtitle">Lata Mangeshkar</div>`,
-        poster: "../Images/koiladkihai.jpeg",
+        poster: "./Images/koiladkihai.jpeg",
     },
     {
         id:"6",
