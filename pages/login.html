@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up form</title>
-    <link rel="stylesheet" href="../CSS/Sign up.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -17,12 +17,13 @@
                 <div class="input-grup">
                     <div class="input-field" id="namefield">
                         <img class="icon " src="../Images/User-icon.jpeg" />
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" required>
                     </div>
+
 
                     <div class="input-field">
                         <img class="icon" src="../Images/Lock-icon.jpeg" />
-                        <input type="password" placeholder="password">
+                        <input type="password" placeholder="password" required>
                     </div>
 
                     <p class="FP">forgot password
@@ -30,14 +31,15 @@
                         <a href="#" class="click-here">
                             click here </a> </p>
                 </div>
-                <div class="btn-field">
+
+                <div class="btn-b">
                     <button type="button" onclick="alert('you have been successfully login')">login</button>
                 </div>
 
                 <div class="register-link">
                     <p>don't have an account?
 
-                        <a href="index.html" class="register">
+                        <a href="../pages/signup.html" class="register">
                             signup
                         </a> </p>
 

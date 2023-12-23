@@ -301,3 +301,7 @@ left_scrolls.addEventListener('click', ()=>{
 right_scrolls.addEventListener('click', ()=>{
     item.scrollLeft += 330;
 })
+
+
+
+
