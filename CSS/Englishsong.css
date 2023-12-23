@@ -130,7 +130,7 @@ header .menu-side .menu-song li img{
    }
    header .menu-side .menu-song li .bi{
     position: absolute;
-    left: 210px;
+    left: 240px;
     top:6px;
     font-size:16px;
    }
@@ -600,6 +600,12 @@ header .menu-side .menu-song li img{
         display: flex;
         margin-right: 10px;
      }
+     header .menu-side .menu-song li .bi{
+        position: absolute;
+        right: 20px;
+        top:6px;
+        font-size:16px;
+       }
 }
 
     @media only screen and (min-width: 801px) and (max-width: 1400px){
@@ -607,23 +613,5 @@ header .menu-side .menu-song li img{
        
 
     }
-    .heart {
-        color: rgb(243, 241, 241);
-        cursor: pointer;
-        font-size: 24px;
-        transition: color 0.3s ease;
-        margin-left: 50%;
-        display:flex;
-        position: absolute;
-        right: 15px;
-        top:6px;
-        font-size:16px;
 
-    }
-    
-    .heart.clicked {
-        color: #e74c3c;
-        margin-left: 50%;
-       
-    }
-    
+   
