@@ -7,34 +7,34 @@ const songs = [
         id:'1',
         songName:` kuch kuch Hota Hai <br>
         <div class="subtitle">Alan Walker</div>`,
-        poster: "Images/kuchkuchhotahai.jpeg"
+        poster: "../Images/kuchkuchhotahai.jpeg"
     },
     {
         id:'2',
         songName:` ladki Badi Anjani Hai <br>
         <div class="subtitle">Alan Walker</div>`,
-        poster: "Images/ladkibadianjani.jpg"
+        poster: "../Images/ladkibadianjani.jpg"
     },
     // all object type 
     {
         id:"3",
         songName: `Main Koi Aisa Geet Gaoon <br><div class="subtitle"> Daniel Levi</div>`,
-        poster: "Images/maikoiaisageetgaoon.jpeg",
+        poster: "../Images/maikoiaisageetgaoon.jpeg",
     },
     {
         id:"4",
         songName: `  Chandi Ki Dal Par <br><div class="subtitle">Alka Yagnik</div>`,
-        poster: "Images/chandikidaal.jpeg",
+        poster: "../Images/chandikidaal.jpeg",
     },
     {
         id:"5",
         songName: `  Koi ladki hai  <br><div class="subtitle">Lata Mangeshkar</div>`,
-        poster: "Images/koiladkihai.jpeg",
+        poster: "../Images/koiladkihai.jpeg",
     },
     {
         id:"6",
         songName: ` Main Koi Aisa geeta Gaoon <br><div class="subtitle">Electro</div>`,
-        poster: "Images/maikoiaisageetgaoon.jpeg",
+        poster: "../Images/maikoiaisageetgaoon.jpeg",
     },
     {
         id:"7",
